@@ -13,7 +13,7 @@
 
 * Check with python you have installed using "python -V" in the terminal
   * For Python 2.x - enter "python -m SimpleHTTPServer 8000"
-  * fOR PYTHON 3.X - enter "python -m http.server 8000"
+  * For Python 3.x - enter "python -m http.server 8000"
   This will start the local server.
 
 * Open browser, type: http://localhost:8000/ to view project.
