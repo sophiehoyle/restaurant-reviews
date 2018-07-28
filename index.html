@@ -11,29 +11,29 @@
 </head>
 
 <body>
-  <header tabindex ="0">
+  <header>
     <nav>
       <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
   </header>
 
   <main id="maincontent">
-    <section id="map-container" tabindex="-1">>
-      <div id="map"></div>
+    <section id="map-container">
+      <div id="map" aria-label="Map of restaurants" role="application"></div>
     </section>
     <section>
-      <div class="filter-options">
+      <div class="filter-options" "filter-options" tabindex="0" aria-label="Filter results">
         <h2>Filter Results</h2>
-        <select id="neighborhoods-select" aria-label="Select the neighborhood" name="neighborhoods" onchange="updateRestaurants()" tabindex="0">
+        <select id="neighborhoods-select" aria-label="Select Neighborhood" name="neighborhoods" onchange="updateRestaurants()" tabindex="0">
           <option value="all">All Neighborhoods</option>
         </select>
         <label for="neighborhoods-select">neighborhoods-select</label>
-        <select id="cuisines-select"  aria-label="Select the cuisine" name="cuisines" onchange="updateRestaurants()">
+        <select id="cuisines-select" aria-label="Select Cuisine" name="cuisines" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
         <label for="cuisines-select">cuisines-select</label>
       </div>
-      <ul id="restaurants-list"></ul>
+      <ul id="restaurants-list" tabindex="0" aria-label="List of restaurants"></ul>
     </section>
   </main>
 
@@ -41,7 +41,7 @@
   <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
   <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
 
-  <footer id="footer" tabindex="0">
+  <footer id="footer">
     Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
   </footer>
 
